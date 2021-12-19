@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #bd4f6c;
+    background-image: linear-gradient(326deg, #bd4f6c 0%, #d7816a 74%);
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navegacion */
+.general-container {
+    width: 100%;
+    top: 0;
+    /* position: absolute; */
+    background-color: #bd4f6c;
+    background-image: linear-gradient(326deg, #bd4f6c 0%, #d7816a 74%);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.flex-container {
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+}
+
+.left {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.left img {
+    width: 100px;
+    height: 100px;
+}
+
+.left span {
+    font-size: 45px;
+}
+
+.titulo-nav {
+    text-align: center;
+    justify-content: center;
+    display: block;
+    font-size: 2.1rem;
+    margin: auto;
+    color: white
+}
+
+.right {
+    width: 100%;
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right a {
+    padding: 15px;
+}
+
+.links {
+    padding: 30px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    display: block;
+    display: inline-block;
+}
+
+.right a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 400ms ease;
+}
+
+.right a:hover {
+    background: #2fb4cc;
+    color: #fff;
+    padding: 10px;
+    border-radius: 30px;
+    position: static;
+}
+
+/* termina el nav */
+/* comienza el main */
+main {
+    padding-top: 0px;
+}
+
+.contenedor-general-main {
+    width: 100%;
+    height: 900px;
+    background-image: url(../Images/casa\ parque\ main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-links {
+    font-size: 2rem;
+    margin: auto;
+    color: white;
+    font-size: 50px;
+}
+
+.main-links a {
+    color:black;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 4rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-links a:hover {
+    background: #2fb4cc;
+    color: #fff;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.imageBody {
+    width: auto;
+    height: auto;
+}
+
+.cajitaFoto div {
+    width: 20%;
+    background-color: #f7f3e8;
+    border-color: #8C0410;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 15px;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.cajitaFoto img {
+    width: 100%;
+    height: 100%;
+}
+
+/* galeria grid */
+.gallery-container {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%,25rem),1fr));
+    grid-auto-rows: 22rem;
+    padding: 2px;
+    gap: 5px;
+}
+.gallery-item {
+    position: relative;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-title {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 1));
+    width: 100%;
+    text-align: center;
+}
+
+/* fin de galeria grid */
+.comVenAlq {
+    position: absolute;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.base {
+    display: inline
+}
+
+
+
+.titulo-h1 {
+    background-color: #d1694c;
+    /* background-image: linear-gradient(326deg, #bd4f6c 0%, #d7816a 74%); */
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    font-size: 35px;
+    padding: 15px;
+}
+
+p {
+    margin: 25px;
+    text-justify: distribute-all-lines;
+}
+/* conocenos */
+.cuadrados {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.cuadrado1 {
+    background-color: #fee2f8;
+    background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
+    line-height: 1.6;
+    border: black;
+    border-style: solid;
+    width: 30%;
+    height: 40%;
+    display: inline-block;
+    margin: 15px;
+    color: black;
+}
+
+.cuadrado2 {
+    background-color: #fee2f8;
+    background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
+    line-height: 1.6;
+    border: black;
+    border-style: solid;
+    width: 30%;
+    height: 40%;
+    display: inline-block;
+    margin: 15px;
+    color: black;
+}
+
+.cuadrado3 {
+    display: inline-block;
+    border: black;
+    border-style: solid;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #cdedfd;
+    background-image: linear-gradient(319deg, #cdedfd 0%, #ffec82 37%, #ffcfd2 100%);
+}
+/* fin conocenos */
+.titulo-h3 {
+    background-color: darkcyan;
+    color: rgb(8, 8, 56);
+    font-family: 'Comfortaa', cursive;
+
+}
+
+li a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+li {
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+}
+
+/* logo */
+.logo {
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+}
+
+.imagenes {
+    padding: 50px;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+
+}
+
+/* footer */
+footer {
+    width: 100%;
+    align-self: flex-end;
+    line-height: 3;
+    text-align: center;
+    background-color: #a40606;
+    background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+    color: white
+}
+
+footer span {
+    font-size: 20px;
+}
+/* comprar */
+.galeria-compras{
+        display: grid;
+        grid-auto-flow: dense;
+        grid-template-columns: repeat(auto-fill, minmax(min(100%,25rem),1fr));
+        grid-auto-rows: 22rem;
+        padding: 2px;
+        gap: 5px;
+}
+
+/* alquileres */
+.alquileres1 {
+    margin-top: 0;
+}
+.galeria-alquileres{
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%,25rem),1fr));
+    grid-auto-rows: 22rem;
+    padding: 2px;
+    gap: 5px;
+}
+
+/* contacto */
+.contenedor-formulario{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.formulario {
+    margin: 30px;
+}
+/* fin contacto */
+/* responsive */
+@media only screen and (max-width: 480px) {
+    .general-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .left{
+        align-self: center;
+    }
+    .left img{
+    align-self: center;
+    margin-left: 0;
+    }
+    .right{
+        align-self: center;
+    }
+    .main-links{
+        text-align: center;
+        justify-content: center;
+    }
+    .contenedor-general-main{
+        align-content: center;
+        
+    }
+    .contenedor-formulario{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .general-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        display: inline-block;
+        align-self: center;
+        text-align: center;
+    }
+    .titulo-nav{
+        align-self: center;
+    }
+    .right{
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+    }
+    .contenedor-general-main{
+        width: 100%;
+        height: 500px;
+        background-image: url(../Images/imgindex/casa\ portada.jpg);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    .main-links a {
+        color: black;
+    }
+    .main-links a:hover {
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+}
+@media only screen and (max-width: 768px){
+    .main-links a {
+    font-size: 3rem;
+    }
+    .contenedor-general-main{
+        flex-direction: column;
+    }
+    .cuadrados{
+        flex-direction: column;
+    }
+    .cuadrado1{
+        width: 100%;
+    }
+    .cuadrado2{
+        width: 100%;
+    }
+    .cuadrado3{
+        width: 100%;
+    }
+    .cuadrado3 img{
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width: 1024px){
+    .cuadrados{
+        flex-direction: column;
+    }
+    .cuadrado1{
+        width: 100%;
+    }
+    .cuadrado2{
+        width: 100%;
+    }
+    .cuadrado3{
+        width: 100%;
+    }
+}
